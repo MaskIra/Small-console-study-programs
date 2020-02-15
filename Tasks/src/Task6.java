@@ -23,7 +23,7 @@ public class Task6 {
             int food = new Random().nextInt(151);
             mas[i].feed(food);
             System.out.println("Meow! I want " + food + ", in the plate " + CatPet.getPlate());
-            System.out.println(mas[i].getName() + " / " + mas[i].getSatiety());
+            System.out.println(mas[i].getName() + " / " + mas[i].getSatiety() + "\n");
         }
     }
 }
