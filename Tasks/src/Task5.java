@@ -16,9 +16,9 @@ public class Task5 {
         Dog d = new Dog(); // super(500, 0.5, 10);
         Cat c1 = new Cat(100, 3, 1);
         Dog d1 = new Dog(1000, 1, 100);
-        System.out.println(c.run(200) +"/"+ c.jump(2)+"/"+c.swim(200));
-        System.out.println(d.run(300) +"/"+ d.jump(1)+"/"+d.swim(2));
-        System.out.println(c1.run(200) +"/"+ c1.jump(2)+"/"+c1.swim(200));
-        System.out.println(d1.run(1100) +"/"+ d1.jump(1)+"/"+d1.swim(2));
+        System.out.println("c.run(200)="+c.run(200) +"\t\t c.jump(2)="+ c.jump(2)+"\t\t c.swim(200)="+c.swim(200));
+        System.out.println("d.run(300)="+d.run(300) +"\t\t d.jump(1)="+ d.jump(1)+"\t d.swim(2)="+d.swim(2));
+        System.out.println("c1.run(200)="+c1.run(200) +"\t c1.jump(2)="+ c1.jump(2)+"\t c1.swim(200)="+c1.swim(200));
+        System.out.println("d1.run(1100)="+d1.run(1100) +"\t d1.jump(1)="+ d1.jump(1)+"\t d1.swim(2)="+d1.swim(2));
     }
 }
