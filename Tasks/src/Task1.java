@@ -14,8 +14,8 @@
  * Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
  */
 public class Task1 {
-    public static void main(String[] args) { // 1
-        // 2
+    public static void main(String[] args) {
+        /** 2 */
         byte b = 127;
         short h = 2;
         int a = 3;
@@ -26,7 +26,7 @@ public class Task1 {
         boolean bool = true;
 
         String str = "";
-        // 3-7
+        /** 3-7 */
         System.out.println("3) " + Sum(1, 3, 6, 2));
         System.out.println("4) " + sravnit(10, 10));
         print(-1);
@@ -35,33 +35,33 @@ public class Task1 {
         getYear(2020);
     }
 
-    // 3
+    /** 3 */
     static double Sum(double a, double b, double c, double d) {
         return a * (b + (c / d));
     }
 
-    // 4
+    /** 4 */
     static boolean sravnit(double x, double y) {
         return x + y <= 20 && x + y >= 10;
     }
 
-    // 5
+    /** 5 */
     static void print(int x) {
         if((x < 0)) System.out.println("5) -");
         else System.out.println("5) +");
     }
 
-    // 6
+    /** 6 */
     static boolean plusOrNot(int x) {
         return x < 0;
     }
 
-    // 7
+    /** 7 */
     static void getName(String name) {
         System.out.println("7) Привет, " + name + "!");
     }
 
-    // 8
+    /** 8 */
     static void getYear(int year) {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 != 0) {
             System.out.println("8) Oh, yeah! // " + year);
