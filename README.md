@@ -9,3 +9,4 @@ Small introductory Java programs. <br>
 * Taks 7: date/time<br>
 * Taks 7.1: exception<br>
 * Taks 7.2: phonebook
+* Taks 8: ships. my version (https://habr.com/ru/post/352374/)
