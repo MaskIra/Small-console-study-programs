@@ -1,7 +1,7 @@
 package Classes.Task8;
 
 public enum Size {
-    SMALL(10), MIDDLE(50), BIG(100);
+    SMALL(10), MIDDLE(20), BIG(30);
     private int size;
 
     Size(int size) {

@@ -13,21 +13,20 @@ public class Pier implements Runnable {
 
     @Override
     public void run() {
-        boolean flag = true;
-        Ship ship = tunnel.getShip(type);
-        if (ship != null) {
-            System.out.printf("\n/Pier %s/ I am loading the ship", type.toString());
-            while (flag) {
-                if (ship.add(force) > 0) {
-                    flag = false;
+        while (true) {
+            Ship ship = tunnel.getShip(type);
+            if (ship != null) {
+                System.out.printf("\n/Pier %s/ I am loading the ship", type.toString());
+                while (!ship.checkCapacity()) {
+                    ship.add(force);
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                 }
-                try {
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                System.out.printf("\n/Pier %s/ I loaded the ship", type.toString());
             }
-            System.out.printf("\n/Pier %s/ I loaded the ship", type.toString());
         }
     }
 }

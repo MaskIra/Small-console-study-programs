@@ -28,26 +28,17 @@ public class Task8 {
     public static void main(String[] args) {
         Tunnel tunnel = new Tunnel(5);
 
-            Random rnd = new Random();
-            int maxCountOfShip = rnd.nextInt(20);
-            System.out.printf("/main/ I want %d ships", maxCountOfShip);
-            ShipGenerator shipGenerator = new ShipGenerator(tunnel, maxCountOfShip);
+        Random rnd = new Random();
+        int maxCountOfShip = rnd.nextInt(8);
+        System.out.printf("/main/ I want %d ships", maxCountOfShip);
+        ShipGenerator shipGenerator = new ShipGenerator(tunnel, maxCountOfShip);
 
-            Pier coalPier = new Pier(Type.COAL, tunnel,10);
-            Pier clothPier = new Pier(Type.CLOTHING,tunnel,10);
-            Pier foodPier = new Pier(Type.FOOD,tunnel,10);
-            new Thread(shipGenerator).start();
-            new Thread(coalPier).start();
-            new Thread(clothPier).start();
-            new Thread(foodPier).start();
-
-
-//            ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
-//            service.execute(shipGenerator);
-//            service.execute(coalPier);
-//            service.execute(clothPier);
-//            service.execute(foodPier);
-//            service.shutdown();
-
+        Pier coalPier = new Pier(Type.COAL, tunnel, 10);
+        Pier clothPier = new Pier(Type.CLOTHING, tunnel, 10);
+        Pier foodPier = new Pier(Type.FOOD, tunnel, 10);
+        new Thread(shipGenerator).start();
+        new Thread(coalPier).start();
+        new Thread(clothPier).start();
+        new Thread(foodPier).start();
     }
 }

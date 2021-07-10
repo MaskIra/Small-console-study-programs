@@ -28,7 +28,6 @@ public class Tunnel {
                     }
                 }
             }
-            System.out.print("\n/tunnel/ I haven't ship:(");
             wait();
         } catch (InterruptedException e) {
             e.printStackTrace();
