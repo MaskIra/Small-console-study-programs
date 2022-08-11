@@ -1,5 +1,5 @@
 # Tasks
-Small introductory Java programs. <br>
+Small console Java programs. <br>
 * Taks 1: types<br>
 * Taks 2: arrays<br>
 * Taks 3: random, enter<br>
@@ -9,4 +9,4 @@ Small introductory Java programs. <br>
 * Taks 7: date/time<br>
 * Taks 7.1: exception<br>
 * Taks 7.2: phonebook
-* Taks 8: ships. my version (https://habr.com/ru/post/352374/)
+* Taks 8: ships. my version of https://habr.com/ru/post/352374/
